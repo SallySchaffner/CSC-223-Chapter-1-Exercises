@@ -24,13 +24,11 @@ def main():
   while cont != "q":
     # Convert string input to ints
     n = int(input("Enter an integer: "))  
-    m = int(input("Enter another integer: "))
-    # Builds a string for output, by converting the integers to string
-    # and then appending the strings
+    m = int(input("Enter a potential multiple: "))
     if is_multiple(n, m):
-      print(str(m) + " is a multiple of " + str(n))
+      print(m, "is a multiple of", n)
     else:
-      print(str(m) + " is not a multiple of " + str(n))
+      print(m, "is not a multiple of", n)
     cont = input("Hit enter to continue or q to quit ")
 
 # Activate the driver upon loading
